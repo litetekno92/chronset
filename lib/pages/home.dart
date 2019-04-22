@@ -32,6 +32,12 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         // title: Text(widget.title),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.search),
+              onPressed: ()  =>{}  ,              
+             ),
+        ],
         title: Center(
           child: Image.asset(
             'images/chroniques-logo.png',
@@ -44,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: <Widget>[
             Card(
+              elevation: 8.0,
               child: ListTile(
                 leading: Icon(Icons.map),
                 title: Text(
@@ -53,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Card(
+              elevation: 8.0,
               child: ListTile(
                 leading: Icon(Icons.photo_album),
                 title: Text(
@@ -62,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Card(
+              elevation: 8.0,
               child: ListTile(
                 leading: Icon(Icons.phone),
                 title: Text(
