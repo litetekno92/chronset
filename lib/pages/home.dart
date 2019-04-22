@@ -62,9 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            
-        Expanded(
-Child:   ListView(
+                  Expanded(
+child:   ListView(
               children: <Widget>[
                 ListTile(
                   leading: Icon(Icons.map),
@@ -79,11 +78,12 @@ Child:   ListView(
                   title: Text('Phone', style: TextStyle(color: Colors.white.withOpacity(0.6)),),
                 ),
               ],
-            )
-          ],
-),
+            ),
         ),
-      ),
+        ],
+        ),
+),
+      
     );
   }
 }
