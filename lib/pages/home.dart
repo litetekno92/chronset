@@ -37,6 +37,18 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.search),
               onPressed: ()  =>{}  ,              
              ),
+                  PopupMenuButton(
+            itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(child: IconButton(
+                  icon: Icon(Icons.email),
+                  onPressed: () {
+                   clicked(context, "Email sent");
+                  },
+                ),),
+              ];
+            },
+          )
         ],
         title: Center(
           child: Image.asset(
@@ -84,4 +96,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+void clicked(BuildContext context, menu) {
+    final scaffold = Scaffold.of(context);
+    scaffold.showSnackBar(
+      SnackBar(
+        content: Text(menu),
+        action: SnackBarAction(
+            label: 'UNDO',
+            onPressed: scaffold.hideCurrentSnackBar),
+      ),
+    );
 }
