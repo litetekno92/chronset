@@ -40,31 +40,39 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      body: ListView(
-                children: <Widget>[
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text(
-                      'Map',
-                      style: TextStyle(color: Colors.white.withOpacity(0.6)),
-                    ),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.photo_album),
-                    title: Text(
-                      'Album',
-                      style: TextStyle(color: Colors.white.withOpacity(0.6)),
-                    ),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.phone),
-                    title: Text(
-                      'Phone',
-                      style: TextStyle(color: Colors.white.withOpacity(0.6)),
-                    ),
-                  ),
-                ],
+      body: Center(
+        child: ListView(
+          children: <Widget>[
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.map),
+                title: Text(
+                  'Map',
+                  style: TextStyle(color: Colors.white.withOpacity(0.6)),
+                ),
               ),
-             );
+            ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.photo_album),
+                title: Text(
+                  'Album',
+                  style: TextStyle(color: Colors.white.withOpacity(0.6)),
+                ),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.phone),
+                title: Text(
+                  'Phone',
+                  style: TextStyle(color: Colors.white.withOpacity(0.6)),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
