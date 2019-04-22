@@ -31,8 +31,8 @@ class MyApp extends StatelessWidget {
         // primarySwatch: Colors.blue,
          // Define the default Brightness and Colors
     brightness: Brightness.dark,
-    primaryColor: mredcol,
-    accentColor: mbluecol,
+    primaryColor: mbluecol,
+    accentColor: mredcol,
     
     // // Define the default Font Family
     // fontFamily: 'Montserrat',
