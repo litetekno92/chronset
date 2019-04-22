@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Chroniques.sn',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
     //   body1: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
     // ),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Accueil Chroniques'),
     );
   }
 }
