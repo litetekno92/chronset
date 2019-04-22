@@ -62,7 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ListView(
+            
+        Expanded(
+Child:   ListView(
               children: <Widget>[
                 ListTile(
                   leading: Icon(Icons.map),
@@ -79,6 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             )
           ],
+),
         ),
       ),
     );
