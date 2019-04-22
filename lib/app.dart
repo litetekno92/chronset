@@ -31,12 +31,15 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         // primarySwatch: Colors.blue,
          // Define the default Brightness and Colors
-    brightness: Brightness.dark,
+    // brightness: Brightness.dark,
+    brightness: Brightness.light,
     primaryColor: mbluecol,
     accentColor: mredcol,
     
     // // Define the default Font Family
     // fontFamily: 'Montserrat',
+    fontFamily: 'Roboto, sans-serif',
+    
     
     // // Define the default TextTheme. Use this to specify the default
     // // text styling for headlines, titles, bodies of text, and more.
